@@ -1,0 +1,8 @@
+CREATE DATABASE ankit;
+USE ankit;
+CREATE TABLE `result` (`id` int(25) NOT NULL, `regno` int(25) NOT NULL, `perc` float NOT NULL);
+CREATE TABLE `subjectwise` (`id` int(5) NOT NULL,`regno` int(10) NOT NULL,`subname` varchar(25) NOT NULL,`submarks` int(5) NOT NULL,`subtotal` int(5) NOT NULL);
+ALTER TABLE `result` ADD PRIMARY KEY (`id`);
+ALTER TABLE `subjectwise` ADD PRIMARY KEY (`id`);
+ALTER TABLE `result` MODIFY `id` int(25) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `subjectwise` MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
